@@ -65,8 +65,27 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Packed Addressables
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+NGJ2024/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+NGJ2024/[Aa]ssets/[Ss]treamingAssets/aa.meta
+NGJ2024/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+# Never ignore DLLs in the FMOD subfolder.
+!NGJ2024/[Aa]ssets/Plugins/FMOD/**/lib/*
+
+# Don't ignore images and gizmos used by FMOD in the Unity Editor.
+!NGJ2024/[Aa]ssets/Gizmos/FMOD/*
+!NGJ2024/[Aa]ssets/Editor Default Resources/FMOD/*
+
+# Ignore the Cache folder since it is updated locally.
+NGJ2024/[Aa]ssets/Plugins/FMOD/Cache/*
+
+# Ignore bank files in the StreamingAssets folder.
+NGJ2024/[Aa]ssets/StreamingAssets/**/*.bank
+NGJ2024/[Aa]ssets/StreamingAssets/**/*.bank.meta
+
+# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
+# Log files can be ignored.
+fmod_editor.log
