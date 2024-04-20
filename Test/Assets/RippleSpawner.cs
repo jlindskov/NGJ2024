@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 
 public class RippleSpawner : MonoBehaviour
 {
 
+    public StudioEventEmitter musicEvent; 
     public LayerMask mask; 
     public GameObject ripplePrefab;
     public Vector3 spawnRotation = new Vector3(90, 0, 0);
@@ -15,6 +17,7 @@ public class RippleSpawner : MonoBehaviour
     private void Start()
     {
         camera = Camera.main;
+        musicEvent.Play();
     }
 
     //make a updateloop that when you click with your mouse it spawns a ripple
