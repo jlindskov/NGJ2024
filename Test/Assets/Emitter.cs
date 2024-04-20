@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Emitter : MonoBehaviour
 {
+    
     public EventReference onRippleEmit;
     List<Ripple> ripples = new List<Ripple>();
     public GameObject ripplePrefab;
@@ -16,7 +17,7 @@ public class Emitter : MonoBehaviour
     {
         if (!ripples.Contains(ripple))
         {
-            RuntimeManager.PlayOneShot(onRippleEmit, transform.position);
+           RuntimeManager.PlayOneShot(onRippleEmit, transform.position);
             Debug.Log("Emitting ripple");
             ripples.Add(ripple);
             StartCoroutine(DestroyAfterTime());

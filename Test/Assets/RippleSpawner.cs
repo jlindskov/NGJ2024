@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class RippleSpawner : MonoBehaviour
 {
-
     public StudioEventEmitter musicEvent; 
     public LayerMask mask; 
     public GameObject ripplePrefab;
