@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-NGJ2024/[Ll]ibrary/
-NGJ2024/[Tt]emp/
-NGJ2024/[Oo]bj/
-NGJ2024/[Bb]uild/
-NGJ2024/[Bb]uilds/
-NGJ2024/[Ll]ogs/
-NGJ2024/[Uu]ser[Ss]ettings/
+Test/[Ll]ibrary/
+Test/[Tt]emp/
+Test/[Oo]bj/
+Test/[Bb]uild/
+Test/[Bb]uilds/
+Test/[Ll]ogs/
+Test/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -68,23 +68,23 @@ crashlytics-build.properties
 NGJ2024/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
-NGJ2024/[Aa]ssets/[Ss]treamingAssets/aa.meta
-NGJ2024/[Aa]ssets/[Ss]treamingAssets/aa/*
+Test/[Aa]ssets/[Ss]treamingAssets/aa.meta
+Test/[Aa]ssets/[Ss]treamingAssets/aa/*
 
 
 # Never ignore DLLs in the FMOD subfolder.
-!NGJ2024/[Aa]ssets/Plugins/FMOD/**/lib/*
+!Test/[Aa]ssets/Plugins/FMOD/**/lib/*
 
 # Don't ignore images and gizmos used by FMOD in the Unity Editor.
-!NGJ2024/[Aa]ssets/Gizmos/FMOD/*
-!NGJ2024/[Aa]ssets/Editor Default Resources/FMOD/*
+!Test/[Aa]ssets/Gizmos/FMOD/*
+!Test/[Aa]ssets/Editor Default Resources/FMOD/*
 
 # Ignore the Cache folder since it is updated locally.
-NGJ2024/[Aa]ssets/Plugins/FMOD/Cache/*
+Test/[Aa]ssets/Plugins/FMOD/Cache/*
 
 # Ignore bank files in the StreamingAssets folder.
-NGJ2024/[Aa]ssets/StreamingAssets/**/*.bank
-NGJ2024/[Aa]ssets/StreamingAssets/**/*.bank.meta
+Test/[Aa]ssets/StreamingAssets/**/*.bank
+Test/[Aa]ssets/StreamingAssets/**/*.bank.meta
 
 # If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
 # Log files can be ignored.
