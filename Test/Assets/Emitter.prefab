@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
+  m_Color: {r: 0.9529412, g: 0.8156863, b: 0.84313726, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -164,11 +164,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onRippleEmit:
     Guid:
-      Data1: 1439027533
-      Data2: 1110869176
-      Data3: -1693091170
-      Data4: -831939234
-    Path: event:/Piano/Piano_Mult_Rand
+      Data1: -34279406
+      Data2: 1158795009
+      Data3: -1023199849
+      Data4: 444901835
+    Path: event:/Piano/Piano_MultSing_Rand
   ripplePrefab: {fileID: 6159573170638145218, guid: 026959b452dfd45569c34acae1967322, type: 3}
   maxRadius: 2
   emitterLength: 1
@@ -252,7 +252,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f4e11ae810d8f47eea46084ab855ca9e, type: 3}
-  m_Color: {r: 1, g: 0.2688679, b: 0.2688679, a: 1}
+  m_Color: {r: 0.9529412, g: 0.8156863, b: 0.84313726, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

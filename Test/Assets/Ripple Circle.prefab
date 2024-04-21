@@ -105,11 +105,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 835277209
-      Data2: 1123754662
-      Data3: 1215758258
-      Data4: 929302103
-    Path: event:/Bells/Bells_MidHi
+      Data1: 1096015435
+      Data2: 1092694292
+      Data3: 84012444
+      Data4: 909517613
+    Path: event:/Bells/Bells_MidHi_Rand
   Event: 
   PlayEvent: 11
   StopEvent: 12
