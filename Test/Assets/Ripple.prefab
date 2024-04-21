@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7112933571304823016}
   - component: {fileID: 2563924084506643615}
   - component: {fileID: 3855351736502470668}
+  - component: {fileID: 6665294704227416922}
   m_Layer: 0
   m_Name: Ripple
   m_TagString: Untagged
@@ -88,3 +89,34 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &6665294704227416922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761201967688243807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -34279406
+      Data2: 1158795009
+      Data3: -1023199849
+      Data4: 444901835
+    Path: event:/Piano/Piano_MultSing_Rand
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
