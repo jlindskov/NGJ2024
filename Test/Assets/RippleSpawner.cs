@@ -5,12 +5,13 @@ using DG.Tweening;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 
 public class RippleSpawner : MonoBehaviour
 {
     public StudioEventEmitter noiseEvent;
-    public StudioEventEmitter musicEvent; 
+    public StudioEventEmitter musicEvent;
     
     public LayerMask mask; 
     public LayerMask Emittermask; 

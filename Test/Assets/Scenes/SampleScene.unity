@@ -670,7 +670,7 @@ Transform:
   m_GameObject: {fileID: 697515507}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3401756, y: -0.8431259, z: 0.028313307}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -690,6 +690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noiseEvent: {fileID: 697515511}
   musicEvent: {fileID: 697515510}
+  introRipple: {fileID: 6159573170638145218, guid: 253598bafa57249219d45fd0cbd833da, type: 3}
   mask:
     serializedVersion: 2
     m_Bits: 16
@@ -703,6 +704,7 @@ MonoBehaviour:
   titleScreenRemoveEase: 6
   emitterSpawnDuration: 0.2
   emitterSpawnEase: 1
+  draggingEmitter: {fileID: 0}
 --- !u!114 &697515510
 MonoBehaviour:
   m_ObjectHideFlags: 0
