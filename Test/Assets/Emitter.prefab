@@ -164,11 +164,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onRippleEmit:
     Guid:
-      Data1: 1096015435
-      Data2: 1092694292
-      Data3: 84012444
-      Data4: 909517613
-    Path: event:/Bells/Bells_MidHi_Rand
+      Data1: 835277209
+      Data2: 1123754662
+      Data3: 1215758258
+      Data4: 929302103
+    Path: event:/Bells/Bells_MidHi
   ripplePrefab: {fileID: 6159573170638145218, guid: 026959b452dfd45569c34acae1967322, type: 3}
   maxRadius: 2
   emitterLength: 1

@@ -62,21 +62,21 @@ public class RippleSpawner : MonoBehaviour
 
         titleScreen.GetComponent<Renderer>().material.DOFade(0, titleScreenRemoveDuration)
             .SetEase(titleScreenRemoveEase);
-        yield return titleScreen.transform.DOScale(0, titleScreenRemoveDuration).SetEase(titleScreenRemoveEase).WaitForCompletion();
+        yield return titleScreen.transform.DOScale(4, titleScreenRemoveDuration).SetEase(titleScreenRemoveEase).WaitForCompletion();
         titleScreen.SetActive(false);
         
+        musicEvent.Play();
         foreach (var emitter in emitters)
         {
-            if (musicEvent.IsPlaying())
-            {
-                musicEvent.Play();
-            }
-            
             emitter.gameObject.SetActive(true);
+            emitter.transform.DORotate(new Vector3(0, 0, 360), emitterSpawnDuration + 0.5f, RotateMode.FastBeyond360)
+                .SetEase(Ease.OutElastic); // Apply easing
+            
+            emitter.Emit(null);
             yield return emitter.transform.DOScale(0, emitterSpawnDuration).From().SetEase(emitterSpawnEase).WaitForCompletion();
         }
         
-        musicEvent.Play();
+    
         
         yield return new WaitForSeconds(0.5f);
         gameStarted = true;
