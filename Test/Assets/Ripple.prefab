@@ -104,11 +104,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -34279406
-      Data2: 1158795009
-      Data3: -1023199849
-      Data4: 444901835
-    Path: event:/Piano/Piano_MultSing_Rand
+      Data1: 835277209
+      Data2: 1123754662
+      Data3: 1215758258
+      Data4: 929302103
+    Path: event:/Bells/Bells_MidHi
   Event: 
   PlayEvent: 11
   StopEvent: 12
