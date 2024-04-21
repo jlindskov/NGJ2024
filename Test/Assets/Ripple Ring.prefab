@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTime: 5
   spriteRenderer: {fileID: 3972376255855787193}
+  parentRipple: {fileID: 0}
 --- !u!212 &3972376255855787193
 SpriteRenderer:
   m_ObjectHideFlags: 0
