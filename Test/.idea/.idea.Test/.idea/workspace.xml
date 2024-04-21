@@ -7,8 +7,13 @@
     <list default="true" id="b890b3bd-7427-486b-8824-5a54dbfcb04d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Emitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Emitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ripple Ring.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ripple Ring.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ripple.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ripple.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ripple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ripple.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/RippleSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RippleSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TitleFader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TitleFader.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +88,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="37860">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="37860" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -103,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713637284309</updated>
       <workItem from="1713637288594" duration="6219000" />
-      <workItem from="1713648481843" duration="6630000" />
+      <workItem from="1713648481843" duration="8298000" />
     </task>
     <servers />
   </component>

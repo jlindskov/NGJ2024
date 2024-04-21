@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Ripple : MonoBehaviour
 {
+    public Color RippleColor = Color.black;
     public int rippleCount = 10;
     public GameObject rippleRingPrefab;
     public float stoneSpawn = 0.4f;
@@ -45,9 +46,9 @@ public class Ripple : MonoBehaviour
             var ripple = Instantiate(rippleRingPrefab, transform.position, Quaternion.identity,this.transform);
             ripple.transform.localScale = previousScale;
             var rippleRenderer = ripple.GetComponent<Renderer>();
-            rippleRenderer.material.color = new Color(0,0,0,previousAlpha);
-
-
+            
+            rippleRenderer.material.color = new Color(RippleColor.r,RippleColor.b,RippleColor.g,previousAlpha);
+            
             rippleRenderer.material.DOFade(1 - ((float)(i - 1)/rippleCount), spawnTime).SetEase(spawnEase).WaitForCompletion();
          
             yield return ripple.transform.DOScale((float)i/rippleCount, spawnTime).SetEase(spawnEase).WaitForCompletion();

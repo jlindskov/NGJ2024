@@ -60,7 +60,8 @@ public class RippleSpawner : MonoBehaviour
             yield return null;
         }
 
-        titleScreen.GetComponent<Renderer>().material.DOFade(0, titleScreenRemoveDuration)
+        titleScreen.GetComponent<TitleFader>().StopFadingLoop();
+        titleScreen.GetComponent<Renderer>().material.DOFade(0, titleScreenRemoveDuration -0.2f)
             .SetEase(titleScreenRemoveEase);
         yield return titleScreen.transform.DOScale(4, titleScreenRemoveDuration).SetEase(titleScreenRemoveEase).WaitForCompletion();
         titleScreen.SetActive(false);
@@ -72,7 +73,6 @@ public class RippleSpawner : MonoBehaviour
             emitter.transform.DORotate(new Vector3(0, 0, 360), emitterSpawnDuration + 0.5f, RotateMode.FastBeyond360)
                 .SetEase(Ease.OutElastic); // Apply easing
             
-            emitter.Emit(null);
             yield return emitter.transform.DOScale(0, emitterSpawnDuration).From().SetEase(emitterSpawnEase).WaitForCompletion();
         }
         

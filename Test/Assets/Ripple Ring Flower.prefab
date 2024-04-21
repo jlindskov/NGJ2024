@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3972376255855787193}
   - component: {fileID: 5811279768870173349}
   m_Layer: 0
-  m_Name: Ripple Ring
+  m_Name: Ripple Ring Flower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

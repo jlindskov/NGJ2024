@@ -10,6 +10,8 @@ public class TitleFader : MonoBehaviour
     public Ease fadeInEase = Ease.Linear;
     public Ease fadeOutEase = Ease.Linear;
     private Renderer rendere; 
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +19,19 @@ public class TitleFader : MonoBehaviour
         FadeLoop();
     }
     
+    private bool shouldContinue = true;
+    
+    // Method to stop the fading loop
+    public void StopFadingLoop()
+    {
+        rendere.material.DOKill(); 
+    }
+    
     void FadeLoop()
     {
         // Fade in
+        if (!shouldContinue)
+            return;
         rendere.material.DOFade(1.0f, fadeDuration).SetEase(fadeInEase)
             .OnComplete(() =>
             {
@@ -33,11 +45,4 @@ public class TitleFader : MonoBehaviour
             });
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
-        
-    }
 }

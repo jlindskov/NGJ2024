@@ -21,8 +21,6 @@ public class Emitter : MonoBehaviour
     public float bounceElasticity = 1; 
     public void Emit(Ripple ripple)
     {
-        if (ripple == null) return; 
-        
         if (!ripples.Contains(ripple))
         {
            RuntimeManager.PlayOneShot(onRippleEmit, transform.position);
