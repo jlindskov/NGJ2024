@@ -23,8 +23,10 @@ public class Emitter : MonoBehaviour
     {
         if (!ripples.Contains(ripple))
         {
-           RuntimeManager.PlayOneShot(onRippleEmit, transform.position);
-            Debug.Log("Emitting ripple");
+            transform.DOKill();
+            transform.localScale = new Vector3(1, 1, 1); 
+            RuntimeManager.PlayOneShot(onRippleEmit, transform.position);
+//            Debug.Log("Emitting ripple");
             ripples.Add(ripple);
             StartCoroutine(DestroyAfterTime());
             transform.DORotate(new Vector3(0, 0, 360), spinDuration, RotateMode.FastBeyond360)
