@@ -13,6 +13,7 @@ public class RippleSpawner : MonoBehaviour
     public StudioEventEmitter musicEvent; 
     
     public LayerMask mask; 
+    public LayerMask Emittermask; 
     public GameObject ripplePrefab;
     public Vector3 spawnRotation = new Vector3(90, 0, 0);
     private Camera camera;
@@ -52,9 +53,8 @@ public class RippleSpawner : MonoBehaviour
         while (!inputReceived)
         {
             // Check for input
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Space key pressed!");
                 inputReceived = true;
             }
             yield return null;
@@ -88,32 +88,57 @@ public class RippleSpawner : MonoBehaviour
         noiseEvent.Stop();
     }
 
+    public GameObject draggingEmitter = null; 
+
     //make a updateloop that when you click with your mouse it spawns a ripple
     void Update()
     {
        if (!gameStarted) return;
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
-        }
        
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 rayOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.zero, Mathf.Infinity, mask);
+       if (Input.GetMouseButtonUp(0))
+       {
+           draggingEmitter = null; 
+       }
 
-            // Check if the ray hits any collider in the scene
-            if (hit.collider != null)
-            {
-                // Get the hit point
-                Vector2 spawnPosition = hit.point;
+       if (draggingEmitter != null)
+       {
+           Vector2 mousePosition = camera.ScreenToWorldPoint(Input.mousePosition);
+           draggingEmitter.transform.position = new Vector3(mousePosition.x, mousePosition.y, 0);
+       }    
+       
+       if (Input.GetKeyDown(KeyCode.R))
+       {
+           Scene scene = SceneManager.GetActiveScene();
+           SceneManager.LoadScene(scene.name);
+       }
+       
+       if (Input.GetMouseButtonDown(0))
+       {
+           Vector2 rayOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+           RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.zero, Mathf.Infinity, mask);
+           RaycastHit2D hitEmitter = Physics2D.Raycast(rayOrigin, Vector2.zero, Mathf.Infinity, Emittermask);
 
-                // Instantiate the prefab at the hit point
-                Instantiate(ripplePrefab, spawnPosition, Quaternion.identity);
-            }
-        }
+           if (hitEmitter.collider != null)
+           {
+                draggingEmitter = hitEmitter.collider.gameObject;
+           }
+           else
+           {
+               // Check if the ray hits any collider in the scene
+               if (hit.collider != null)
+               {
+                   // Get the hit point
+                   Vector2 spawnPosition = hit.point;
+
+                   // Instantiate the prefab at the hit point
+                   Instantiate(ripplePrefab, spawnPosition, Quaternion.identity);
+               }
+           }
+
+         
+           
+           
+       }
         
     }
     

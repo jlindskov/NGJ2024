@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 823126519303339173}
   - component: {fileID: 8363702906635270291}
   - component: {fileID: 9063919518587054991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Emitter
-  m_TagString: Untagged
+  m_TagString: Emitter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1743224466868458951}
   - component: {fileID: 6464445234848620379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Emitter_250px
   m_TagString: Untagged
   m_Icon: {fileID: 0}

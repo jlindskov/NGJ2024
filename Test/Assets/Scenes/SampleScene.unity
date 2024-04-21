@@ -693,6 +693,9 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 16
+  Emittermask:
+    serializedVersion: 2
+    m_Bits: 64
   ripplePrefab: {fileID: 761201967688243807, guid: 9e913a7ed032f4089a9f2df191555fd0, type: 3}
   spawnRotation: {x: 0, y: 0, z: 0}
   titleScreen: {fileID: 703320684}
